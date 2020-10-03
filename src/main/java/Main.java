@@ -14,13 +14,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Simple Quiz");
-        System.out.println("When did Meil Armstrong set foot on the moon? ");
-        Scanner getInput = new Scanner(System.in);
-        String answer = getInput.nextLine();
-        System.out.println("Your answer is" + answer);
-        if (answer.equals("1969"))
+        
+        if (Quiz.askQuestion("When did Neil Armstrong set foot on the moon? ", "1969")){
             System.out.println("You are a genius!");
-        else
+        } else {
             System.out.println("You are too stupid.");
+        }
     }
 }
+        
+        
+            
+                    
+        
+ 
